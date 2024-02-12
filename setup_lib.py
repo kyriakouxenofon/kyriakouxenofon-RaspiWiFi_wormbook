@@ -7,6 +7,7 @@ def install_prereqs():
 	os.system('apt install python3 python3-rpi.gpio python3-pip dnsmasq hostapd -y')
 	os.system('clear')
 	print("Installing Flask web server...")
+	os.system('mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.orig')
 	print()
 	os.system('pip3 install flask pyopenssl')
 	os.system('clear')
